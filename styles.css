@@ -1,6 +1,7 @@
-/* Forzar Arial Narrow en todo el contenido de la tabla */
+/* Forzar Arial en todo el contenido de la tabla, en negritas */
 .reportTable, .reportTable * {
-    font-family: 'Arial Narrow', Arial, sans-serif !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: bold !important;
 }
 
 /* Aplicar estilos generales a la tabla */
@@ -14,17 +15,14 @@
 .reportTable thead th {
     background-color: #001F7F !important; /* Azul Rey */
     color: white !important;
-    font-weight: bold !important;
-    font-size: 20px !important;
     text-align: center !important;
     padding: 10px !important;
     border: 1px solid black !important;
 }
 
-/* CUERPO: Fondo blanco, texto centrado y tamaño de letra 16px */
+/* CUERPO: Fondo blanco, texto centrado */
 .reportTable tbody td {
     background-color: white !important;
-    font-size: 16px !important;
     text-align: center !important;
     padding: 10px !important;
     border: 1px solid black !important;
@@ -35,7 +33,7 @@
     background-color: inherit !important;
     color: inherit !important;
     text-align: center !important;
-    font-size: inherit !important;
+    font-weight: inherit !important;
 }
 
 /* Asegurar que todo el texto esté centrado */
