@@ -1,0 +1,49 @@
+/* Forzar Arial Narrow en todo el contenido de la tabla */
+.reportTable, .reportTable * {
+    font-family: 'Arial Narrow', Arial, sans-serif !important;
+}
+
+/* Aplicar estilos generales a la tabla */
+.reportTable {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    background-color: white !important;
+}
+
+/* ENCABEZADOS: Fondo azul rey y letras blancas */
+.reportTable thead th {
+    background-color: #001F7F !important; /* Azul Rey */
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    padding: 10px !important;
+    border: 1px solid black !important;
+}
+
+/* CUERPO: Fondo blanco, texto centrado y tamaño de letra 16px */
+.reportTable tbody td {
+    background-color: white !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    padding: 10px !important;
+    border: 1px solid black !important;
+}
+
+/* Sobreescribir estilos en línea (si Fiix los aplica dinámicamente) */
+.reportTable td[style], .reportTable th[style] {
+    background-color: inherit !important;
+    color: inherit !important;
+    text-align: center !important;
+    font-size: inherit !important;
+}
+
+/* Asegurar que todo el texto esté centrado */
+.reportTable td, .reportTable th {
+    text-align: center !important;
+}
+
+/* Aumentar especificidad para asegurar que los estilos se apliquen */
+.reportTable.reportTable td, .reportTable.reportTable th {
+    text-align: center !important;
+}
